@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial Black, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4a4f4;
+            background-color: #f4f4f4;
         }
 
         header {
@@ -69,7 +69,31 @@
             box-sizing: border-box;
         }
 
-      
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Sua Página de Destino</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sua Página de Destino</h1>
+    </header>
+
+    <nav>
+        <a href="#programming-section">Programação</a>
+        <a href="#git-section">Git</a>
+        <a href="github.html">GitHub</a>
+        <a href="#main-content">Contato</a>
     </nav>
 
     <div class="container" id="programming-section">
@@ -84,7 +108,25 @@ console.log(mensagem);</code></pre>
         <h2>Sobre Git</h2>
         <p>Git é um sistema de controle de versão amplamente utilizado para rastrear alterações no código-fonte durante o desenvolvimento de software. Um exemplo básico de uso do Git:</p>
         <pre><code># Exemplo de comandos Git
+git init
+git add .
+git commit -m "Primeiro commit"
+git push origin master</code></pre>
+    </div>
 
+    <div class="container" id="main-content">
+        <h2>Bem-vindo à nossa página!</h2>
+        <p>Insira suas informações abaixo:</p>
+
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Enviar</button>
         </form>
